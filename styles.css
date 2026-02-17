@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+    fot-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+    color: #333;
+}
+body, h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: #333; /* Dark header background */
+    color: bisque; /* White header text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav a {
+    color: bisque;
+    text-decoration: chartreuse;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    color: #333; /* Dark gray headings */
+    margin-bottom: 1rem;
+}
+
+.home-content {
+    text-align: center;
+  
+}
+.home-content h1{
+  font-size: 45px;
+}
+.home-content p{
+    font-size: 20px
+  
+}
+
+#portfolio {
+    text-align: center; 
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center; /* Center text within each project */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.project-details {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Add hover effect */
+.project:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Contact Form Styles */
+#contact form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding:4px;
+  height:25px;
+  border:1px dotted coral;
+  border-bottom:2px solid coral;
+  background-color:#f2f2f2;
+}
+#contact input:focus,
+#contact textarea:focus {
+    background: coral;
+    
+}
+
+#contact button {
+    background-color: coral;
+    color: yellowgreen;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Color Change Button */
+#color-changer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue */
+    color: gold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+}
+
+/* Initial color scheme */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #333;
+}
+
+.profile-picture {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Makes it circular */
+    margin: 1rem auto; /* Centers the image */
+    display: block; /* Makes sure it takes up the full width available */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+.more-details {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    color: coral;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.view-more {
+  background-color: coral;
+    color: yellowgreen;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-title {
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 3px solid black;
+  animation: typing 8s steps(10) infinite alternate;
+}
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.fade-title {
+  font-size: 2em;
+  text-align: center;
+  animation: fade 5s infinite;
+}
+
+/* 🔥 PRELOADER STYLES */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img {
+    width: 100px;
+    animation: spin 2s linear infinite, glow 1.5s infinite alternate;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 5px red); }
+    100% { filter: drop-shadow(0 0 20px red); }
+}
+
+/* 🚀 INTRO SCREEN */
+#intro-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+}
+
+/* 🔥 MOTO ANIMATION */
+.fire {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: url('fire1.gif');
+    background-size: cover;
+    opacity: 0.7;
+}
+
+#logout {
+    position: absolute;
+    left: 50%;
+    background: black;
+    color: coral;
+    border: 2px solid red;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: bounce 2s infinite alternate;
+}
+
+/* 🔥 ENTER BUTTON */
+button {
+    background: aqua;
+    color: coral;
+    border: 2px solid coral;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+button:hover {
+    background: red;
+    color: black;
+    border: 2px solid white;
+}
+
+/* ⚡ MAIN CONTENT */
+#main-content {
+    display: none;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 💥 Explosion Effect */
+#explosion {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, red, yellow, orange);
+    z-index: 9999;
+    display: none;
+    animation: explode 0.8s forwards;
+}
+
+@keyframes explode {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(2); }
+    100% { opacity: 0; transform: scale(5); }
+}
+
+/* Glitch Effect */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: coral;
+    text-transform: uppercase;
+    animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); text-shadow: 2px 2px red, -2px -2px blue; }
+    50% { transform: translateX(10px); text-shadow: -2px -2px red, 2px 2px blue; }
+    75% { transform: translateX(-10px); text-shadow: 2px 2px red, -2px -2px blue; }
+    100% { transform: translateX(0); }
+}
+

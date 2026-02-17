@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+  <style>
+  body {
+    font-family: 'Quantico', sans-serif;  
+    background: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: coral;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 15px aqua;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 50%;
+    background: #f2f2f2;
+    color: aqua;
+    border: none;
+    cursor: pointer;
+    border: 2px solid aqua;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: bounce 2s infinite alternate;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+button:hover {
+    background: aqua;
+    color: coral;
+    border: 3px solid aqua;
+}
+  #register input,
+  #login input {
+    padding:4px;
+  height:25px;
+  width:250px;
+  border-radius:5px;
+  border:1px dotted aqua;
+  border-bottom:2px solid aqua;
+  background-color:#f2f2f2;
+  }
+  #register input:focus,
+  #login input:focus  {
+    background-color: lightyellow;
+  }
+  h2,
+  p  {
+    color: aqua;
+  }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div id="register">
+            <h2 id="h2">Register Now</h2>
+            <input type="text" id="regName" placeholder="Enter Name">
+            <input type="email" id="regEmail" placeholder="Enter Email">
+            <input type="password" id="regPassword" placeholder="Enter Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <button onclick="register()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()" id="p">Login</a></p>
+        </div>
+
+        <div id="login" style="display: none;">
+            <h2>Login Here</h2>
+            <input type="email" id="loginEmail" placeholder="Enter Email">
+            <input type="password" id="loginPassword" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegister()" id="p">Register</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Preloader ya Kibabe -->
+    
+
+    <!-- Intro Screen Kali yenye Moto -->
+    <div id="intro-screen">
+        <h1 class="title">WELCOME TO MY PORTFOLIO</h1>
+        <button onclick="startAnimation()" id="button">🔥 ENTER 🔥</button>
+        <div class="fire"></div>  <!-- Moto wa ukweli -->
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content">
+        
+    </div>
+
+    <!-- Explosion Effect -->
+    <div id="explosion"></div>
+
+    <!-- Sound Effects -->
+    <audio id="enter-sound" src="pop.mp3"></audio>
+    <audio id="fire-sound" src="success.mp3" loop></audio>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="typing-title">HASSAN JUMA SEMBE</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-content">
+            <h1 class="fade-title">Welcome to My Portfolio</h1>
+            <p>Full Stack Web Developer | ICT Officer | Software Developer</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <img src="pcs/profile2.jpg" alt="Hassan Juma Sembe" class="profile-picture">
+    <p>I am a passionate Full Stack Web Developer with expertise in frontend and backend technologies, graphic design, and software maintenance. I am constantly learning new skills to improve my work.</p>
+</section>
+
+
+    <!-- CV Section -->
+    <section id="cv">
+        <h2>Curriculum Vitae (CV)</h2>
+        <ul>
+            <li><strong>Education:</strong> Bachelor of Information Technology, KIUT, Year 2, Semester 2</li>
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript, PHP, MySQL, Graphic Design, Software Maintenance</li>
+            <li><strong>Languages:</strong> Swahili, English, Chinese, French</li>
+        </ul>
+        <a href="CV.pdf" download>Download My CV (PDF)</a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="projects">
+        
+        <div class="project"> 
+            <h3>Project 1</h3>
+            <p>For more description of Project 1 press button below.</p>
+            <button class="view-more">View More</button>
+            <div class="more-details" style="display: none;">
+                <img src="pcs/project1.png" alt="Project 1">
+                <p>A site specializing in the selling and buying of clothes such as t-shirts, kali, jeans from Beijing (China), watches, caps, and shoes..</p>
+            </div>
+        </div>
+        <div class="project"> 
+            <h3>Project 2</h3>
+            <p>For more description of Project 2 press button below.</p>
+            <button class="view-more">View More</button>
+            <div class="more-details" style="display: none;">
+                <img src="pcs/project2.png" alt="Project 1">
+                <p>A site specializing in vehicle sales and purchases. Vehicles from various parts of the world such as Japan, the USA, Germany, and China.</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>For more description of Project 3 press button below.</p>
+            <button class="view-more">View More</button>
+            <div class="more-details" style="display: none;">
+                <img src="pcs/project3.png" alt="Project 1">
+                <p>A site created for easy access to electronic appliances. This includes computers (laptops and desktops) and smartphones like Google Pixels and iPhones.</p>
+            </div>
+        </div>
+        
+        <div class="project">
+           <h3>Project 4</h3>
+            <p>For more description of Project 4 press button below.</p>
+            <button class="view-more">View More</button>
+            <div class="more-details" style="display: none;">
+                <img src="pcs/project4.png" alt="Project 1">
+                <p>A site created for the voting process during election time to choose leaders and representatives.</p>
+            </div>
+        </div>
+        <div class="project">
+           <h3>Project 5</h3>
+            <p>For more description of Project 5 press button below.</p>
+            <button class="view-more">View More</button>
+            <div class="more-details" style="display: none;">
+                <img src="pcs/project5.png" alt="Project 1">
+                <p>A site offering various services such as web hosting, web maintenance, and web creation at affordable prices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            
+        </form>
+        <button onclick="logout()" id="logout">Logout</button>
+             <script>
+        function logout() {
+            alert("Logged out successfully!");
+            window.location.href = "index.html";
+        }
+    </script>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <button id="color-changer">Change Colors</button>
+        
+
+   
+
+        <p>&copy; 2025 Hassan Juma Sembe</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
